@@ -1,0 +1,29 @@
+#include <REGX52.H>
+
+void Timer0_Init()		//1??@12.000MHz初始化定时器0
+	
+{
+
+	TMOD &= 0xF0;			//???????
+	TMOD |= 0x01;			//???????
+	TL0 = 0x18;				//???????
+	TH0 = 0xFC;				//???????
+	TF0 = 0;				//??TF0??
+	TR0 = 1;	
+	ET0=1;
+	EA=1;
+	PT0=0;	//???0????
+}
+//void Timer0_Routine() interrupt 1  //1秒调用模板
+//{
+//	static unsigned int counter=0;
+
+//	TL0 = 0x18;				//???????
+//	TH0 = 0xFC;
+//	counter++;
+//	if(counter>=1000)
+//	{
+
+//	counter=0;
+
+//	}
