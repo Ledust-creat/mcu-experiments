@@ -18,6 +18,17 @@
 !/51project/11-2蜂鸣器音乐/project.uvproj
 !/51project/11-2蜂鸣器音乐/README.md
 
+# 自己的开发板照片、可公开使用的参考简谱与编谱笔记。
+# 只放行以下明确列出的素材，不整体上传原来的 music1 目录。
+!/51project/11-2蜂鸣器音乐/images/
+/51project/11-2蜂鸣器音乐/images/*
+!/51project/11-2蜂鸣器音乐/images/puzhong-a2.jpg
+!/51project/11-2蜂鸣器音乐/images/qifengle-reference.jpg
+!/51project/11-2蜂鸣器音乐/scores/
+/51project/11-2蜂鸣器音乐/scores/*
+!/51project/11-2蜂鸣器音乐/scores/qifengle-notes.txt
+!/51project/11-2蜂鸣器音乐/scores/README.md
+
 # -------------------------------------------------------------
 # 构建产物与本机 IDE 配置不提交。
 # 默认放行规则已经排除了它们；这些规则用于防止后续放宽规则误收。
