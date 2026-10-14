@@ -46,6 +46,53 @@
 !/51project/DS1302电子钟-秒表-音乐闹钟/images/ds1302-clock-running.jpg
 
 # -------------------------------------------------------------
+# STM32：标准库手动移植 FreeRTOS 与最小任务验证
+# -------------------------------------------------------------
+!/FreeRTOS/
+/FreeRTOS/*
+!/FreeRTOS/stm32f103c8t3_stand_ts_freertos/
+/FreeRTOS/stm32f103c8t3_stand_ts_freertos/*
+!/FreeRTOS/stm32f103c8t3_stand_ts_freertos/main.c
+!/FreeRTOS/stm32f103c8t3_stand_ts_freertos/project.uvprojx
+!/FreeRTOS/stm32f103c8t3_stand_ts_freertos/README.md
+!/FreeRTOS/stm32f103c8t3_stand_ts_freertos/THIRD_PARTY_NOTICES.md
+
+!/FreeRTOS/stm32f103c8t3_stand_ts_freertos/Start/
+/FreeRTOS/stm32f103c8t3_stand_ts_freertos/Start/*
+!/FreeRTOS/stm32f103c8t3_stand_ts_freertos/Start/*.c
+!/FreeRTOS/stm32f103c8t3_stand_ts_freertos/Start/*.h
+!/FreeRTOS/stm32f103c8t3_stand_ts_freertos/Start/startup_stm32f10x_md.s
+!/FreeRTOS/stm32f103c8t3_stand_ts_freertos/User/
+/FreeRTOS/stm32f103c8t3_stand_ts_freertos/User/*
+!/FreeRTOS/stm32f103c8t3_stand_ts_freertos/User/*.c
+!/FreeRTOS/stm32f103c8t3_stand_ts_freertos/User/*.h
+!/FreeRTOS/stm32f103c8t3_stand_ts_freertos/Libraries/
+/FreeRTOS/stm32f103c8t3_stand_ts_freertos/Libraries/*
+!/FreeRTOS/stm32f103c8t3_stand_ts_freertos/Libraries/*.c
+!/FreeRTOS/stm32f103c8t3_stand_ts_freertos/Libraries/*.h
+
+!/FreeRTOS/stm32f103c8t3_stand_ts_freertos/FreeRTOS/
+/FreeRTOS/stm32f103c8t3_stand_ts_freertos/FreeRTOS/*
+!/FreeRTOS/stm32f103c8t3_stand_ts_freertos/FreeRTOS/*.c
+!/FreeRTOS/stm32f103c8t3_stand_ts_freertos/FreeRTOS/include/
+/FreeRTOS/stm32f103c8t3_stand_ts_freertos/FreeRTOS/include/*
+!/FreeRTOS/stm32f103c8t3_stand_ts_freertos/FreeRTOS/include/*.h
+!/FreeRTOS/stm32f103c8t3_stand_ts_freertos/FreeRTOS/portable/
+/FreeRTOS/stm32f103c8t3_stand_ts_freertos/FreeRTOS/portable/*
+!/FreeRTOS/stm32f103c8t3_stand_ts_freertos/FreeRTOS/portable/RVDS/
+/FreeRTOS/stm32f103c8t3_stand_ts_freertos/FreeRTOS/portable/RVDS/*
+!/FreeRTOS/stm32f103c8t3_stand_ts_freertos/FreeRTOS/portable/RVDS/ARM_CM3/
+/FreeRTOS/stm32f103c8t3_stand_ts_freertos/FreeRTOS/portable/RVDS/ARM_CM3/*
+!/FreeRTOS/stm32f103c8t3_stand_ts_freertos/FreeRTOS/portable/RVDS/ARM_CM3/*.c
+!/FreeRTOS/stm32f103c8t3_stand_ts_freertos/FreeRTOS/portable/RVDS/ARM_CM3/*.h
+!/FreeRTOS/stm32f103c8t3_stand_ts_freertos/FreeRTOS/portable/MemMang/
+/FreeRTOS/stm32f103c8t3_stand_ts_freertos/FreeRTOS/portable/MemMang/*
+!/FreeRTOS/stm32f103c8t3_stand_ts_freertos/FreeRTOS/portable/MemMang/heap_4.c
+
+# 博客草稿与待发布配图统一放在已有的 outputs/，不加入代码仓库。
+# 根目录默认忽略规则已经覆盖该目录。
+
+# -------------------------------------------------------------
 # 构建产物与本机 IDE 配置不提交。
 # 默认放行规则已经排除了它们；这些规则用于防止后续放宽规则误收。
 # -------------------------------------------------------------
