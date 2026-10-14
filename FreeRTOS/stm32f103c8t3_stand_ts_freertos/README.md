@@ -2,6 +2,8 @@
 
 这是我学习 FreeRTOS 后，向 STM32F103 标准库工程手动加入内核的最小验证例程。通过 PC13 LED 任务检查任务创建、调度器启动和阻塞延时的基本路径；当前只有一个应用任务，另有内核自动创建的空闲任务。项目没有演示任务间队列、互斥锁或电机控制。
 
+移植步骤与配图说明：[CSDN 文章](https://blog.csdn.net/2301_76484443/article/details/167915584)。
+
 ## 环境与运行行为
 
 | 项目 | 配置 | 条件与说明 |
@@ -9,7 +11,7 @@
 | MCU | STM32F103C8，Cortex-M3 | 工程按 64 KiB Flash、20 KiB SRAM 配置 |
 | 时钟 | HSE 8 MHz，PLL 后 HCLK 72 MHz | 由现有 `system_stm32f10x.c` 配置；进入 main 后检查实际 HCLK |
 | 工具链 | Keil MDK、ARM Compiler 5 | 本次验证使用 MDK 5.39、ARMCC 5.06 update 7 build 960；当前 RVDS 端口面向 ARMCC5 |
-| 内核 | FreeRTOS V11.1.0 | 版本依据 `FreeRTOS/include/task.h` |
+| 内核 | FreeRTOS V11.1.0 | 来自网页下载的 202406-LTS 系列包；版本依据 `FreeRTOS/include/task.h` |
 | 端口及内存 | `portable/RVDS/ARM_CM3`、`heap_4.c` | 只把一种 heap 实现加入编译；保留原有 17 KiB 内核堆配置 |
 | LED | PC13，低电平点亮的板载 LED | 若开发板没有该 LED，应按实际电路修改 GPIO 或接入合适的外部 LED 电路 |
 | 任务参数 | 优先级 2，栈深度 128 words | 本端口约 512 字节栈空间；不含任务控制块，未进行栈余量实测 |
@@ -66,4 +68,4 @@ STM32F103 实现了 4 个 NVIC 优先级位，工程显式设置 `NVIC_PriorityG
 
 学习参考韦东山／百问网 FreeRTOS 课程和 FreeRTOS 官方示例。内核、CMSIS 启动代码和 STM32 标准外设库来自各自上游；我的工作是将它们集成到标准库工程、完成配置与任务验证，并整理说明。此次公开整理补充了上述诊断检查，没有宣称内核和标准库为个人原创。
 
-原学习文档以移植截图为主。博客草稿和待发布配图在本地独立管理，发布后的 CSDN 链接再补充到项目说明。上游版权与许可说明见 [第三方来源](THIRD_PARTY_NOTICES.md)。
+原学习文档以移植截图为主，图文说明已发布到上方 CSDN 文章。博客草稿和配图在本地独立管理，上游版权与许可说明见 [第三方来源](THIRD_PARTY_NOTICES.md)。

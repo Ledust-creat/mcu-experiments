@@ -10,7 +10,7 @@
 |---|---|---|---|
 | 51 | 蜂鸣器音乐：[工程](51project/11-2蜂鸣器音乐/README.md) · [CSDN 文章](https://blog.csdn.net/2301_76484443/article/details/167812943) | Timer0 方波发声、音符与时值编码、《起风了》参考旋律播放 | 附此前录制的实机演示视频；本次整理未重新编译或复测 |
 | 51 | DS1302 综合时钟：[工程](51project/DS1302电子钟-秒表-音乐闹钟/README.md) | 日期与时间显示、秒表、音乐闹钟、AT24C02 闹钟参数保存 | 作者已在普中 A2 开发板完成实机验证 |
-| STM32F103 | 标准库移植 FreeRTOS：[工程](FreeRTOS/stm32f103c8t3_stand_ts_freertos/README.md) | Cortex-M3 端口选择、异常映射、heap_4、LED 任务与故障检查 | 2026-10-14 ARMCC5 全量重建通过，0 错误、0 警告；作者已确认整理版上板功能验证成功，未提供波形测量结果 |
+| STM32F103 | 标准库移植 FreeRTOS：[工程](FreeRTOS/stm32f103c8t3_stand_ts_freertos/README.md) · [CSDN 文章](https://blog.csdn.net/2301_76484443/article/details/167915584) | Cortex-M3 端口选择、异常映射、heap_4、LED 任务与故障检查 | 2026-10-14 ARMCC5 全量重建通过，0 错误、0 警告；作者已确认整理版上板功能验证成功，未提供波形测量结果 |
 
 ## 来源与个人贡献
 
