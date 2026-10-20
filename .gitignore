@@ -89,6 +89,79 @@
 /FreeRTOS/stm32f103c8t3_stand_ts_freertos/FreeRTOS/portable/MemMang/*
 !/FreeRTOS/stm32f103c8t3_stand_ts_freertos/FreeRTOS/portable/MemMang/heap_4.c
 
+# -------------------------------------------------------------
+# ESP32-S3：LVGL 触摸调光与温湿度显示，只发布 levgl_rgb。
+# -------------------------------------------------------------
+!/EPS32/
+/EPS32/*
+!/EPS32/learn/
+/EPS32/learn/*
+!/EPS32/learn/levgl_rgb/
+/EPS32/learn/levgl_rgb/*
+!/EPS32/learn/levgl_rgb/.gitignore
+!/EPS32/learn/levgl_rgb/README.md
+!/EPS32/learn/levgl_rgb/THIRD_PARTY_NOTICES.md
+!/EPS32/learn/levgl_rgb/CMakeLists.txt
+!/EPS32/learn/levgl_rgb/sdkconfig
+!/EPS32/learn/levgl_rgb/dependencies.lock
+
+!/EPS32/learn/levgl_rgb/main/
+/EPS32/learn/levgl_rgb/main/**
+!/EPS32/learn/levgl_rgb/main/**/
+!/EPS32/learn/levgl_rgb/main/**/*.c
+!/EPS32/learn/levgl_rgb/main/**/*.h
+!/EPS32/learn/levgl_rgb/main/**/CMakeLists.txt
+
+!/EPS32/learn/levgl_rgb/components/
+/EPS32/learn/levgl_rgb/components/*
+!/EPS32/learn/levgl_rgb/components/bsp/
+/EPS32/learn/levgl_rgb/components/bsp/*
+!/EPS32/learn/levgl_rgb/components/bsp/*.c
+!/EPS32/learn/levgl_rgb/components/bsp/*.h
+!/EPS32/learn/levgl_rgb/components/bsp/CMakeLists.txt
+
+!/EPS32/learn/levgl_rgb/components/lvgl/
+/EPS32/learn/levgl_rgb/components/lvgl/*
+!/EPS32/learn/levgl_rgb/components/lvgl/CMakeLists.txt
+!/EPS32/learn/levgl_rgb/components/lvgl/Kconfig
+!/EPS32/learn/levgl_rgb/components/lvgl/idf_component.yml
+!/EPS32/learn/levgl_rgb/components/lvgl/lvgl.h
+!/EPS32/learn/levgl_rgb/components/lvgl/lv_conf_template.h
+!/EPS32/learn/levgl_rgb/components/lvgl/LICENCE.txt
+!/EPS32/learn/levgl_rgb/components/lvgl/README.md
+!/EPS32/learn/levgl_rgb/components/lvgl/env_support/
+/EPS32/learn/levgl_rgb/components/lvgl/env_support/*
+!/EPS32/learn/levgl_rgb/components/lvgl/env_support/cmake/
+
+!/EPS32/learn/levgl_rgb/components/lvgl/src/
+/EPS32/learn/levgl_rgb/components/lvgl/src/**
+!/EPS32/learn/levgl_rgb/components/lvgl/src/**/
+!/EPS32/learn/levgl_rgb/components/lvgl/src/**/*.c
+!/EPS32/learn/levgl_rgb/components/lvgl/src/**/*.h
+!/EPS32/learn/levgl_rgb/components/lvgl/src/**/LICENSE*
+!/EPS32/learn/levgl_rgb/components/lvgl/src/**/LICENCE*
+!/EPS32/learn/levgl_rgb/components/lvgl/src/**/COPYING*
+!/EPS32/learn/levgl_rgb/components/lvgl/demos/
+/EPS32/learn/levgl_rgb/components/lvgl/demos/**
+!/EPS32/learn/levgl_rgb/components/lvgl/demos/**/
+!/EPS32/learn/levgl_rgb/components/lvgl/demos/**/*.c
+!/EPS32/learn/levgl_rgb/components/lvgl/demos/**/*.h
+!/EPS32/learn/levgl_rgb/components/lvgl/examples/
+/EPS32/learn/levgl_rgb/components/lvgl/examples/**
+!/EPS32/learn/levgl_rgb/components/lvgl/examples/**/
+!/EPS32/learn/levgl_rgb/components/lvgl/examples/**/*.c
+!/EPS32/learn/levgl_rgb/components/lvgl/examples/**/*.h
+
+!/EPS32/learn/levgl_rgb/demo/
+/EPS32/learn/levgl_rgb/demo/*
+!/EPS32/learn/levgl_rgb/demo/esp32-lvgl-rgb-panel.mp4
+!/EPS32/learn/levgl_rgb/images/
+/EPS32/learn/levgl_rgb/images/*
+!/EPS32/learn/levgl_rgb/images/demo-preview.png
+!/EPS32/learn/levgl_rgb/licenses/
+/EPS32/learn/levgl_rgb/licenses/*
+!/EPS32/learn/levgl_rgb/licenses/Apache-2.0.txt
+
 # 博客草稿与待发布配图统一放在已有的 outputs/，不加入代码仓库。
 # 根目录默认忽略规则已经覆盖该目录。
 
