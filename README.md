@@ -12,6 +12,7 @@
 | 51 | DS1302 综合时钟：[工程](51project/DS1302电子钟-秒表-音乐闹钟/README.md) | 日期与时间显示、秒表、音乐闹钟、AT24C02 闹钟参数保存 | 作者已在普中 A2 开发板完成实机验证 |
 | STM32F103 | 标准库移植 FreeRTOS：[工程](FreeRTOS/stm32f103c8t3_stand_ts_freertos/README.md) · [CSDN 文章](https://blog.csdn.net/2301_76484443/article/details/167915584) | Cortex-M3 端口选择、异常映射、heap_4、LED 任务与故障检查 | 2026-10-14 ARMCC5 全量重建通过，0 错误、0 警告；作者已确认整理版上板功能验证成功，未提供波形测量结果 |
 | ESP32-S3 | LVGL 触摸调光与温湿度显示：[工程](EPS32/learn/levgl_rgb/README.md) · [实机视频](EPS32/learn/levgl_rgb/demo/esp32-lvgl-rgb-panel.mp4) | ST7789 SPI 屏、CST816T 触摸、DHT11、WS2812 与 LVGL 事件 | 历史上已实现并有演示视频；2026-10-20 作者确认重新构建通过，本次未重新上板 |
+| STM32F103 | DJI M3508 速度环：[工程](32project/motor速度环pid/README.md) | TJA1050、CAN 报文收发、速度 PID、反馈低通滤波、匿名上位机调参 | 2026-10-21 ARMCC5 全量重建通过，0 错误、0 警告；启停逻辑主机模拟测试通过，未重新上板 |
 
 ## 来源与个人贡献
 

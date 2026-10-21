@@ -162,6 +162,41 @@
 /EPS32/learn/levgl_rgb/licenses/*
 !/EPS32/learn/levgl_rgb/licenses/Apache-2.0.txt
 
+# -------------------------------------------------------------
+# STM32：DJI M3508 CAN 速度环与反馈低通滤波。
+# 仅放行 motor速度环pid，不上传其他 STM32 学习目录。
+# -------------------------------------------------------------
+!/32project/
+/32project/*
+!/32project/motor速度环pid/
+/32project/motor速度环pid/*
+!/32project/motor速度环pid/main.c
+!/32project/motor速度环pid/project.uvprojx
+!/32project/motor速度环pid/README.md
+!/32project/motor速度环pid/THIRD_PARTY_NOTICES.md
+
+!/32project/motor速度环pid/Hardware/
+/32project/motor速度环pid/Hardware/*
+!/32project/motor速度环pid/Hardware/*.c
+!/32project/motor速度环pid/Hardware/*.h
+!/32project/motor速度环pid/System/
+/32project/motor速度环pid/System/*
+!/32project/motor速度环pid/System/*.c
+!/32project/motor速度环pid/System/*.h
+!/32project/motor速度环pid/User/
+/32project/motor速度环pid/User/*
+!/32project/motor速度环pid/User/*.c
+!/32project/motor速度环pid/User/*.h
+!/32project/motor速度环pid/Libraries/
+/32project/motor速度环pid/Libraries/*
+!/32project/motor速度环pid/Libraries/*.c
+!/32project/motor速度环pid/Libraries/*.h
+!/32project/motor速度环pid/Start/
+/32project/motor速度环pid/Start/*
+!/32project/motor速度环pid/Start/*.c
+!/32project/motor速度环pid/Start/*.h
+!/32project/motor速度环pid/Start/startup_stm32f10x_md.s
+
 # 博客草稿与待发布配图统一放在已有的 outputs/，不加入代码仓库。
 # 根目录默认忽略规则已经覆盖该目录。
 
